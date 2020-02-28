@@ -1,12 +1,12 @@
 {
   "name": "dnd-vanila",
-  "homepage": "https://milliwonkim.github.io/drag-and-drag-vanila-js",
+  "homepage": "https://milliwonkim.github.io/vanilla-js-drag-and-drop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "rm -rf dist && parcel build index.html",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
